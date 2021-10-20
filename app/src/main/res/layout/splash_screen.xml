@@ -32,27 +32,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp">
-
-        <TextView
-            android:id="@+id/designed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Developed by "
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="#8D33FF"
-            android:visibility="invisible"></TextView>
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KRSTECHNO"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="#8D33FF"
-            android:visibility="invisible"></TextView>
-    </LinearLayout>
+        android:layout_marginBottom="30dp"/>
 
 </RelativeLayout>

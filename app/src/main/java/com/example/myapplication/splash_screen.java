@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class splash_screen extends Activity {
 
-    TextView designed, name, app_name;
+    TextView  app_name;
     ImageView logo;
 
     @Override
@@ -20,8 +20,7 @@ public class splash_screen extends Activity {
         setContentView(R.layout.splash_screen);
 
         logo = findViewById(R.id.logo);
-        designed = findViewById(R.id.designed);
-        name = findViewById(R.id.name);
+
         app_name = findViewById(R.id.app_name);
 
         new Handler().postDelayed(new Runnable() {
@@ -44,12 +43,11 @@ public class splash_screen extends Activity {
     }
 
     private void startEnterAnimation() {
-        app_name.startAnimation(AnimationUtils.loadAnimation(splash_screen.this, R.anim.bottom));
+
         logo.startAnimation(AnimationUtils.loadAnimation(splash_screen.this, R.anim.p_in));
 
         logo.setVisibility(View.VISIBLE);
-        designed.setVisibility(View.VISIBLE);
-        name.setVisibility(View.VISIBLE);
+
         app_name.setVisibility(View.VISIBLE);
     }
 }
